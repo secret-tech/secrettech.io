@@ -1,0 +1,15 @@
+extends includes/tpl.pug
+append head
+  title secret_tech
+block body
+  .container
+    a.logo(href="/")
+      | &#62;&#95;
+    h1.title
+      | Hello, we are
+      | secret_tech from Jincor
+      | and we developing cool 
+      a(href="./stuff.html") stuff
+      | .
+    .footer.footer-abs
+      include includes/footer.pug

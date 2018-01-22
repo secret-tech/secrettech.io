@@ -1,0 +1,111 @@
+@import "./vendor/normalize.css";
+
+* {
+  font-family: Roboto;
+  color: #111;
+}
+
+a {
+  color: #005BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  padding: 60px;
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.logo {
+  font-family: Roboto Mono;
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 92px;
+  color: #111;
+  letter-spacing: -0.2px;
+  line-height: 92px;
+  margin: 0;
+  white-space: pre;
+}
+
+.projects {
+  margin: 170px 0 30px;
+}
+
+.project {
+  margin: 70px 0;
+}
+
+.project-title {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-family: Roboto Mono;
+  font-size: 24px;
+  line-height: 38px;
+  max-width: 640px;
+}
+
+.project-url {
+  display: inline-block;
+  font-family: Roboto Mono;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer.footer-abs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 60px;
+}
+
+@media only screen and (max-height: 575px) {
+  .footer.footer-abs {
+    position: static;
+    padding: 60px 0;
+  }
+}
+
+.cta {
+  font-family: Roboto Mono;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.links {
+  margin: 0 -10px;
+}
+
+.links > a {
+  font-family: Roboto Mono;
+  font-size: 24px;
+  margin: 0 10px;
+}
