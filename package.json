@@ -15,7 +15,8 @@
     "css": "gulp css",
     "images": "gulp images",
     "icons": "gulp icons",
-    "svg": "gulp svg"
+    "svg": "gulp svg",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
