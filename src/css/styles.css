@@ -69,11 +69,24 @@ html, body {
   max-width: 640px;
 }
 
+.project-links {
+  margin: 20px -10px 0;
+}
+
 .project-url {
   display: inline-block;
   font-family: Roboto Mono;
   font-size: 18px;
-  margin-top: 20px;
+  margin: 0 10px;
+}
+
+.project-url.disabled {
+  cursor: not-allowed;
+  color: #929292;
+}
+
+.project-url.disabled:hover {
+  text-decoration: none;
 }
 
 .footer {
