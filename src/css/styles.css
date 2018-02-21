@@ -122,3 +122,85 @@ html, body {
   font-size: 24px;
   margin: 0 10px;
 }
+
+@media only screen and (max-width: 980px) {
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 52px;
+    white-space: normal;
+  }
+
+  .cta {
+    font-size: 18px;
+  }
+
+  .links {
+    margin: 0;
+  }
+
+  .links > a {
+    margin: 10px 0;
+    display: block;
+    font-size: 18px;
+  }
+
+  .footer.footer-abs {
+    position: static;
+    padding: 40px 0;
+  }
+}
+
+@media only screen
+  and (min-device-height: 650px)
+  and (orientation: portrait) {
+    .footer.footer-abs {
+      position: absolute;
+      padding: 20px;
+    }
+}
+
+@media only screen
+  and (min-device-width: 768px) {
+    .logo {
+      margin-bottom: 40px;
+    }
+
+    .container {
+      padding: 60px;
+    }
+
+    .title {
+      font-size: 72px;
+      line-height: 72px;
+      white-space: normal;
+    }
+
+    .cta {
+      font-size: 24px;
+    }
+
+    .links {
+      margin: 0 -10px;
+    }
+
+    .links > a {
+      margin: 0 10px;
+      display: block;
+      font-size: 24px;
+    }
+
+    .footer.footer-abs {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 60px;
+    }
+}
