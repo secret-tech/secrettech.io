@@ -19,12 +19,27 @@ html, body {
 }
 
 .container {
-  padding: 60px;
+  padding: 60px 60px 0 60px;
   box-sizing: border-box;
   max-width: 1600px;
   margin: 0 auto;
-  position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+    padding: 20px 20px 0;
+  }
 }
 
 .logo {
@@ -45,15 +60,39 @@ html, body {
   letter-spacing: -0.2px;
   line-height: 92px;
   margin: 0;
-  white-space: pre;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .projects {
   margin: 170px 0 30px;
 }
 
+@media only screen and (max-width: 720px) {
+  .projects {
+    margin: 30px 0;
+  }
+}
+
 .project {
   margin: 70px 0;
+}
+
+@media only screen and (max-width: 720px) {
+  .project {
+    margin: 30px 0;
+  }
 }
 
 .project-title {
@@ -62,11 +101,23 @@ html, body {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 720px) {
+  .project-title {
+    font-size: 24px;
+  }
+}
+
 .project-description {
   font-family: Roboto Mono;
   font-size: 24px;
-  line-height: 38px;
+  line-height: 1.2;
   max-width: 640px;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-description {
+    font-size: 18px;
+  }
 }
 
 .project-links {
@@ -78,6 +129,12 @@ html, body {
   font-family: Roboto Mono;
   font-size: 18px;
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-url {
+    font-size: 16px;
+  }
 }
 
 .project-url.disabled {
@@ -93,17 +150,9 @@ html, body {
   padding: 60px 0;
 }
 
-.footer.footer-abs {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 60px;
-}
-
-@media only screen and (max-height: 575px) {
-  .footer.footer-abs {
-    position: static;
-    padding: 60px 0;
+@media only screen and (max-width: 720px) {
+  .footer {
+    width: 100%;
   }
 }
 
@@ -111,6 +160,12 @@ html, body {
   font-family: Roboto Mono;
   font-size: 24px;
   margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 720px) {
+  .cta {
+    font-size: 18px;
+  }
 }
 
 .links {
@@ -123,85 +178,10 @@ html, body {
   margin: 0 10px;
 }
 
-@media only screen and (max-device-width: 980px) {
-  .logo {
-    margin-bottom: 30px;
-  }
-
-  .container {
-    padding: 40px 20px;
-  }
-
-  .title {
-    font-size: 42px;
-    line-height: 52px;
-    white-space: normal;
-  }
-
-  .cta {
-    font-size: 18px;
-  }
-
-  .links {
-    margin: 0;
-  }
-
+@media only screen and (max-width: 720px) {
   .links > a {
-    margin: 10px 0;
-    display: block;
     font-size: 18px;
+    display: block;
+    margin: 10px;
   }
-
-  .footer.footer-abs {
-    position: static;
-    padding: 40px 0;
-  }
-}
-
-@media only screen
-  and (min-device-height: 650px)
-  and (orientation: portrait) {
-    .footer.footer-abs {
-      position: absolute;
-      padding: 20px;
-    }
-}
-
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1365px) {
-    .logo {
-      margin-bottom: 40px;
-    }
-
-    .container {
-      padding: 60px;
-    }
-
-    .title {
-      font-size: 72px;
-      line-height: 72px;
-      white-space: normal;
-    }
-
-    .cta {
-      font-size: 24px;
-    }
-
-    .links {
-      margin: 0 -10px;
-    }
-
-    .links > a {
-      margin: 0 10px;
-      display: block;
-      font-size: 24px;
-    }
-
-    .footer.footer-abs {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 60px;
-    }
 }

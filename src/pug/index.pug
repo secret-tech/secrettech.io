@@ -3,13 +3,17 @@ append head
   title secret_tech
 block body
   .container
-    a.logo(href="./index.html")
-      | &#62;&#95;
-    h1.title
-      | Hello, we are 
-      | secret_tech - the crew 
-      | which is developing cool 
-      a(href="./stuff.html") software
-      | .
+    div
+      a.logo(href="./index.html")
+        | &#62;&#95;
+      h1.title
+        | Hello, we are
+        br
+        | secret_tech - 
+        a(href="./crew.html") the crew 
+        br
+        | which is developing cool 
+        a(href="./stuff.html") software
+        | .
     .footer.footer-abs
       include includes/footer.pug

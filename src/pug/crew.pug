@@ -1,0 +1,42 @@
+extends includes/tpl.pug
+append head
+  title secret_tech | software
+block body
+  .container
+    a.logo(href="./index.html")
+      | &#62;goback&#95;
+    h1.title
+      | Our crew.
+    .projects
+      .project
+        .project-title Andrey Degtyaruk
+        .project-description CTO
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/hlogeon") Github
+          
+      .project
+        .project-title Alexandr Sedelnikov
+        .project-description Backend
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/AlekNS") Github
+          
+      .project
+        .project-title Alexandr Shaikhanov
+        .project-description Backend
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/Aleserche") Github
+          
+      .project
+        .project-title Aidar Ibatullin
+        .project-description Frontend
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/Amazing-Space-Invader") Github
+          
+      .project
+        .project-title Alexandr Isaev
+        .project-description Frontend
+        .project-links
+          a.project-url(target="_blank" href="https://github.com/kotokur") Github
+          
+    .footer
+      include includes/footer.pug
